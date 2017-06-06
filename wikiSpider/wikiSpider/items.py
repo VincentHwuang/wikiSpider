@@ -7,8 +7,10 @@
 
 import scrapy
 
-
-class WikispiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+#Each Scrapy item object represents a single page on the website.
+#Obviously,we can define as many fields as we'd like(url,content,
+#header,image,etc.)
+class Article(scrapy.Item):
+	# define the fields for your item here like:
+	# name = scrapy.Field()
+	title=scrapy.Field()	
